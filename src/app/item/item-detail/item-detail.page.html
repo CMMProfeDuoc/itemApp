@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>item-detail</ion-title>
+    <ion-button> IR ATRAS</ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item>{{item.name}}</ion-item>
+    <ion-img
+      [src] = 'item.imageURL'
+      [alt] = 'item.name'
+    ></ion-img>
+  </ion-list>
+</ion-content>
